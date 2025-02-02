@@ -1,119 +1,48 @@
 body {
-    font-family: sans-serif;
-    background-color: #1a1a2e;
-    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    text-align:center;
 }
 
 .container {
-    background-color: #22223b;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    width: 400px;
-    text-align: left;
-}
-.status-info p{
-    margin: 5px 0;
-}
-.customer-input {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.customer-input input,
-.customer-input button{
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-#purchase-btn {
-    background-color: #ffc107;
-    color: #000;
-    font-weight: bold;
+.input-section {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-#purchase-btn:hover {
-  background-color: #ffd54f;
+button:hover {
+    background-color: #218838;
 }
-.total-display {
+
+#change-due {
     margin-top: 20px;
-    font-size: 1.2em;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-}
-.cash-register {
-     margin-top: 20px;
-    position: relative; /* To position the child elements */
-    background-color: #a8dadc;
-    padding: 10px;
-        display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.display {
-      background-color: #1d3557;
-      height: 70px;
-    width: 100px;
-     position: absolute; /* Position inside cash-register */
-    top: 0;
-    left: 5px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    padding: 10px;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 10px);
-    grid-template-rows: repeat(3, 10px);
-    gap: 2px; /* Space between dots */
-}
-.grid::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        border-radius: 2px;
-        position: absolute;
-        z-index: -1;
-}
-.grid::after {
-        content: '';
-        display: block;
-         width: 100%;
-        height: 100%;
-        border-radius: 2px;
-        position: absolute;
-        z-index: 1;
-        background-color: #a8dadc;
-}
-
-.grid div {
-    width: 10px;
-    height: 10px;
-    background-color: black;
-}
-.change-drawer{
-    padding: 10px;
-    background-color: white;
-    color: black;
-    margin-top: 80px;
-
-}
-.change-drawer p{
-    margin: 5px 0;
+    font-weight: bold;
 }

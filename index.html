@@ -8,42 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cash Register Project</h1>
-        <div class="status-info">
-            <p>Status: <span id="status">OPEN</span></p>
-            <p>TWENTY: $<span id="twenty-amount">60</span></p>
-            <p>TEN: $<span id="ten-amount">20</span></p>
-            <p>FIVE: $<span id="five-amount">15</span></p>
-            <p>ONE: $<span id="one-amount">1</span></p>
-            <p>QUARTER: $<span id="quarter-amount">0.5</span></p>
-            <p>DIME: $<span id="dime-amount">0.2</span></p>
-            <p>PENNY: $<span id="penny-amount">0.04</span></p>
-        </div>
-        <div class="customer-input">
-            <label for="cash-input">Enter cash from customer:</label>
-            <input type="number" id="cash-input" step="0.01">
+        <h1>Cash Register</h1>
+        <div class="input-section">
+            <label for="cash">Enter cash from customer:</label>
+            <input type="number" id="cash" step="0.01" min="0">
             <button id="purchase-btn">Purchase</button>
         </div>
-        <div class="total-display">
-            <p>Total: $<span id="total-amount">3.26</span></p>
-        </div>
-       <div class="cash-register">
-        <div class = "display">
-        <div class ="grid"></div>
-        </div>
-            <div class="change-drawer">
-            <p>Change in drawer:</p>
-            <p>Pennies: $<span id="change-pennies">0.93</span></p>
-            <p>Nickels: $<span id="change-nickels">2.05</span></p>
-            <p>Dimes: $<span id="change-dimes">2.7</span></p>
-            <p>Quarters: $<span id="change-quarters">3.25</span></p>
-            <p>Ones: $<span id="change-ones">89</span></p>
-             <p>Fives: $<span id="change-fives">40</span></p>
-              <p>Tens: $<span id="change-tens">0</span></p>
-               <p>Twenties: $<span id="change-twenties">0</span></p>
-               <p>Hundreds: $<span id="change-hundreds">100</span></p>
-            </div>
-        </div>
+        <div id="change-due"></div>
     </div>
     <script src="script.js"></script>
 </body>
